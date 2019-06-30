@@ -1,0 +1,19 @@
+{
+  "name": "firstnodejsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "firstProgram.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazy-reva/MyFirstNodejsApp.git"
+  },
+  "author": "Raveena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crazy-reva/MyFirstNodejsApp/issues"
+  },
+  "homepage": "https://github.com/crazy-reva/MyFirstNodejsApp#readme"
+}
