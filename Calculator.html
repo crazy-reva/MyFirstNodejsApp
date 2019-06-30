@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function setResult()
+                { 
+                    var a=document.getElementById("a").value;
+                    var b=document.getElementById("b").value;
+                    var operation=document.getElementById("op").value;
+                    var result=operate(Number(a), Number(b), operation);
+                    document.getElementById("rs").value=result;
+                }
+
+            function clearResult()
+                { 
+                    document.getElementById("a").value="";
+                    document.getElementById("b").value="";
+                    document.getElementById("op").value="";
+                    document.getElementById("rs").value="";
+                }
+
+            function operate(value1, value2, operator) {
+                    if (operator == 'addition') {
+                        return value1 + value2;
+                    } else if (operator == 'subtraction') {
+                        return value1 - value2;
+                    } else if (operator == 'division') {
+                       return value1 / value2;
+                    } else if (operator == 'multiplication') {
+                        return value1 * value2;
+                    }
+                }
+
+        </script>
+    </head>
+<body>
+        <h1>Enter value 1:</h1>
+        <input type="number" id="a"/></br>
+        <h1>Select operation:</h1>
+        <select id = "op">
+                <option value="addition">+</option>
+                <option value="subtraction">-</option>
+                <option value="multiplication">*</option>
+                <option value="division">/</option>
+        </select>
+        <h1>Enter value 2:</h1>
+        <input type="number" id="b"/></br>
+        <h1>Result</h1>
+        <input type="number" id="rs" value=""/></br></br>
+
+        <input type="button" onclick="setResult();" value="Submit"></input>
+        <input type="button" onclick="clearResult();" value="Reset"></input>
+
+        
+
+        
+</body>
+</html> 
