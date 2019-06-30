@@ -1,7 +1,7 @@
 var http = require('http'),
     fs = require('fs');
 
-
+const port = process.env.PORT || 3000;
 fs.readFile('./Calculator.html', function (err, html) {
     if (err) {
         throw err; 
@@ -13,4 +13,6 @@ fs.readFile('./Calculator.html', function (err, html) {
     }).listen(3000);
 });
 // Console will print the message
-console.log('Server running at http://localhost:3000/');
+server.listen(port,() => {
+   console.log(`Server running at port `+port);
+ });
